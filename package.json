@@ -1,0 +1,34 @@
+{
+  "name": "node-call-tracking",
+  "version": "0.1.0",
+  "description": "A Call Tracking example using the Nexmo Voice API written in Node.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nexmo/nexmo-node-call-tracking.git"
+  },
+  "main": "./lib/server.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "nexmo": "^1.0.0-beta-7"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^2.5.3",
+    "nodemon": "^1.9.2"
+  },
+  "scripts": {
+    "test": "mocha test/*-test.js",
+    "start": "nodemon ./lib/server.js",
+    "test-watch": "nodemon mocha test/*-test.js"
+  },
+  "keywords": [
+    "voice",
+    "nexmo",
+    "calls",
+    "recording"
+  ],
+  "author": "Phil Leggetter <phil@leggetter.co.uk> (http://www.leggetter.co.uk)",
+  "license": "MIT"
+}
