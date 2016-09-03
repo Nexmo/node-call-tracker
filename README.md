@@ -73,6 +73,6 @@ The application should be available on <http://localhost:5000>.
 
 ### Using the App
 
-Call one of the virtual numbers that you  listed on the page. From there you'll see events being logged to the JavaScript console as they come in to your application.
+Call one of the virtual numbers that you  listed on the page. The call will be tracked and forwarded to the desired destination number.
 
-When the call is finished a text message will be sent to the number that all calls are being proxied to with a URL for the call recording. The URL for the call recording will also be pushed to the web browser.
+You can see a list of tracked calls by accessing <http://localhost:5000/tracked-calls>.
