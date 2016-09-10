@@ -40,7 +40,7 @@ Fill in the values in `.env` as appropriate.
 Buy numbers for calls that you would like to track. The following example buys the first available number in a given country by country code.
 
 ```sh
-number:buy --country_code [YOUR_COUNTRY_CODE]
+nexmo number:buy --country_code [YOUR_COUNTRY_CODE]
 ```
 
 Link the virtual numbers to the app id with the Nexmo CLI:
