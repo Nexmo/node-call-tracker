@@ -49,16 +49,16 @@ Link the virtual numbers to the app id with the Nexmo CLI:
 nexmo link:app [NUMBER] [app-id]
 ```
 
-Update the app to set the webhook urls to be your server instead of the example.com placeholders used at creation.
+[Update the app](https://github.com/Nexmo/nexmo-cli#update-an-application) to set the webhook urls to be your server instead of the example.com placeholders used at creation.
 
 ```sh
-nexmo app:update ['app-id'] demo-app [your url]/answer [your url]/event
+nexmo app:update [app-id] demo-app [your url]/answer [your url]/event
 ```
 
 We recommend using [ngrok](https://ngrok.com/) to tunnel through to your locally running application. In which case the command above is likely to be something similar to:
 
 ```sh
-nexmo app:update ['app-id'] demo-app https://___.ngrok.io/answer https://___.ngrok.io/event
+nexmo app:update [app-id] demo-app https://___.ngrok.io/answer https://___.ngrok.io/event
 ```
 
 Where `___` should be replaced with the `ngrok.io` subdomain you are assigned.
