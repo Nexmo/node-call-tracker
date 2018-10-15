@@ -16,8 +16,8 @@ You will need:
 ## Installation
 
 ```sh
-git clone https://github.com/nexmo/node-call-tracking.git
-cd node-call-tracking
+git clone https://github.com/nexmo/node-call-tracker.git
+cd node-call-tracker
 npm install
 ```
 
