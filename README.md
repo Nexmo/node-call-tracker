@@ -76,3 +76,7 @@ The application should be available on <http://localhost:5000>.
 Call one of the virtual numbers that you rented. The call will be tracked and forwarded to the desired destination number.
 
 You can see a list of tracked calls by accessing <http://localhost:5000/tracked-calls>.
+
+### License
+
+This project is licensed under the [MIT license](LICENSE).
