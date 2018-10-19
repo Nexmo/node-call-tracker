@@ -32,7 +32,7 @@ nexmo app:create demo-app --keyfile private.key http://example.com http://exampl
 Rename the config file:
 
 ```sh
-mv example.env .env
+mv .env.example .env
 ```
 
 Fill in the values in `.env` as appropriate.
