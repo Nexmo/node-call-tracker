@@ -1,5 +1,7 @@
 # Calling Tracking Demo using Node and the Nexmo Voice API
 
+[Prerequisites](#prerequisites) | [Installation](#installation) | [Setup](#setup) | [Running the App](#running-the-app) | [Using the App](#using-the-app)
+
 This app used the Nexmo Voice API to demonstrate how a call tracking application could be built.
 
 * The call is tracked
