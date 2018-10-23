@@ -23,19 +23,19 @@ npm install
 
 ## Setup
 
-Create the nexmo application, using the [Nexmo CLI](https://github.com/nexmo/nexmo-cli) and take note of the application universally unique identifier (UUID):
-
-```sh
-nexmo app:create demo-app --keyfile private.key http://example.com http://example.com
-```
-
 Rename the config file:
 
 ```sh
-mv example.env .env
+cp example.env .env
 ```
 
 Fill in the values in `.env` as appropriate.
+
+Edit the following command to use the URL of where your application is hosted. Then run the [Nexmo CLI](https://github.com/nexmo/nexmo-cli) command below and take note of the application universally unique identifier (UUID) it returns:
+
+```sh
+nexmo app:create demo-app --keyfile private.key http://your-url-here/track-call http://your-url-here/event
+```
 
 Buy numbers for calls that you would like to track. The following example buys the first available number in a given country by country code.
 
@@ -43,25 +43,11 @@ Buy numbers for calls that you would like to track. The following example buys t
 nexmo number:buy --country_code [YOUR_COUNTRY_CODE]
 ```
 
-Link the virtual numbers to the app id with the Nexmo CLI:
+Link each number to the application by running a command like this with the application UUID and the number to link.
 
 ```sh
 nexmo link:app [NUMBER] [app-id]
 ```
-
-[Update the app](https://github.com/Nexmo/nexmo-cli#update-an-application) to set the webhook urls to be your server instead of the example.com placeholders used at creation.
-
-```sh
-nexmo app:update [app-id] demo-app [your url]/answer [your url]/event
-```
-
-We recommend using [ngrok](https://ngrok.com/) to tunnel through to your locally running application. In which case the command above is likely to be something similar to:
-
-```sh
-nexmo app:update [app-id] demo-app https://___.ngrok.io/answer https://___.ngrok.io/event
-```
-
-Where `___` should be replaced with the `ngrok.io` subdomain you are assigned.
 
 ### Running the App
 
