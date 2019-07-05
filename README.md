@@ -5,6 +5,8 @@ This app used the Nexmo Voice API to demonstrate how a call tracking application
 * The call is tracked
 * Incoming calls are proxied to a destination number
 
+You can read the [detailed tutorial on Nexmo's Developer Portal](https://developer.nexmo.com/tutorials/call-tracking) about call tracking; this repo is the sample code to accompany that tutorial.
+
 ## Prerequisites
 
 You will need:
